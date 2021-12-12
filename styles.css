@@ -21,3 +21,15 @@ h2 {
   justify-items: center;
   outline: red 2px solid;
 }
+
+.board {
+  display: grid;
+  grid-template-columns: 16 1fr;
+  grid-template-rows: 16 1fr;
+}
+
+.grid {
+  border: 1px blue solid;
+  width: 50px;
+  display: inline-block;
+}
