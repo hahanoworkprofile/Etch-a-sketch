@@ -1,35 +1,32 @@
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   margin: 0;
   padding: 0;
 }
 
-h1 {
-  text-align: center;
-  margin-top: 1%;
-}
-
-h2 {
-  color: lightslategray;
+.board {
+  width: 500px;
+  height: 500px;
+  border: 4px black solid;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 3%;
-  justify-items: center;
-  outline: red 2px solid;
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
 }
 
-.board {
-  display: grid;
-  grid-template-columns: 16 1fr;
-  grid-template-rows: 16 1fr;
+.control-panel {
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.grid {
-  border: 1px blue solid;
-  width: 50px;
-  display: inline-block;
+button {
+  padding: 1% 1%;
+  margin-top: 10%;
 }

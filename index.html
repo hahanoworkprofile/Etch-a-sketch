@@ -7,16 +7,17 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Etch-a-sketch</h1>
     <div class="container">
-      <div class="panel">
-        <h2>Control Panel</h2>
-      </div>
-      <div class="board-side">
-        <h2>Board</h2>
-        <div class="board"></div>
+      <div class="board"></div>
+      <div class="control-panel">
+        <input type="color" />
+        <button data-action="pen">pen</button>
+        <button data-action="eraser">eraser</button>
+        <button data-action="rainbow">Rainbow mode</button>
+        <button data-action="clear">Clear board</button>
       </div>
     </div>
+
     <script src="app.js"></script>
   </body>
 </html>
