@@ -1,6 +1,7 @@
 //ui
 const board = document.querySelector('.board'); 
 const colorPicker = document.querySelector('input[type="color"]');
+const rangePicker = document.querySelector('input[type="range"]'); 
 const penButton = document.querySelector('button[data-action="pen"]') ;
 const eraserButton = document.querySelector('button[data-action="eraser"]');
 const rainbowButton = document.querySelector('button[data-action="rainbow"] ');
@@ -12,6 +13,7 @@ let mode ="pen";
 //scripting
 setUp(16);
 colorPicker.addEventListener('change', e => color = e.target.value);
+rangePicker.addEventListener('change', e=> setUp(e.target.value));
 penButton.addEventListener('click', e => mode="pen"); 
 eraserButton.addEventListener('click', e => mode="eraser"); 
 rainbowButton.addEventListener('click', e=> mode="rainbow"); 
